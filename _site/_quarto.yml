@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "Who Targets Me - South Africa"
+  favicon: "wtm_logo_2020_transparent-150x150.png"
+  navbar:
+    logo: "wtm_logo_2020_transparent-300x300.png"
+    left:
+      - href: index.qmd
+        text: "{{< iconify ph coins >}} Spending"
+      - sidebar:targeting
+      - href: about.qmd
+        text: "{{< iconify ph info-thin >}} About"
+  sidebar:
+    - id: ""
+    - id: targeting
+      title: "{{< iconify ph users-three-thin >}} Targeting"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - targeting.qmd
+        - detailed.qmd
+        - location.qmd
+        - demographics.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    fontsize: 1.2em
