@@ -766,8 +766,8 @@ da30 <- mark_list[[2]]
 # da90 <- mark_list[[3]]
 # 
 # da7 %>%  filter(page_id == "153080620724")
-da30 <- get_targeting_db("ZA", 30, "2024-05-29") 
-da7 <- get_targeting_db("ZA", 7, "2024-05-29") 
+da30 <- metatargetr::get_targeting_db("ZA", 30, "2024-05-30") 
+da7 <- metatargetr::get_targeting_db("ZA", 7, "2024-05-30") 
 
 
 # saveRDS(da90, "data/election_dat90.rds")
